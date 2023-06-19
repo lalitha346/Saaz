@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
+    <title>page2</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Open Sans", sans-serif;
+            color: #333333;
+        }
+
+        .container {
+            border: 4px;
+            background-color: white;
+            /* rgba(169, 14, 212, 0.027);*/
+            width: 15%;
+            color: black;
+            float: left;
+
+        }
+
+
+        .navbar li {
+            list-style: none;
+            float: left;
+
+            padding: 18px;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box2 {
+            background-color: red;
+            float: left;
+            width: 70%;
+            border: 2px solid white;
+            margin-left: 20px;
+            padding: 2px;
+            display: block;
+
+
+        }
+
+        img {
+            float: left;
+            margin: 4px;
+        }
+
+        h1 {
+            width: 75%;
+            background-color: white;
+            float: left;
+            padding-left: 15px;
+
+
+        }
+
+        p {
+            background-color: aqua;
+
+
+        }
+
+        .btn {
+            background-color: #FAB2FF;
+            margin: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 18px;
+        }
+
+        .songItem {
+            background-color: white;
+            border: 2px solid green;
+            overflow: auto;
+            margin-top: 40px;
+            margin-left: 30px;
+            float: left;
+            text-align: center;
+        }
+
+        .downbox1 {
+            width: 100%;
+
+            background-color: black;
+            border: 6px solid white;
+            overflow: auto;
+            color: white;
+            margin-top: 2%;
+            padding: 20px;
+            float: right;
+            position: sticky;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .icons {
+            margin-top: 14px;
+
+        }
+
+        #myProgressBar {
+            width: 80vw;
+            cursor: pointer;
+
+        }
+
+        .timestamp {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box1" class="container ">
+        <nav class="navbar">
+            <ul>
+                <li> <a href="">home</a></li>
+
+                <li> <a href="">search </a> </li>
+
+                <li> <a href="">your library</a> </li>
+
+                <li> <a href=""> created playlist</a> </li>
+
+                <li> <a href="">liked songs</a> </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+    <div class="box2">
+        <img src="saazimg1.jpg" alt="none" width="200" height="200">
+        <h1 class="container1">Best Indian Lofi Hits</h1>
+        <p class="lalitha">Listen to the the most relaxig and Chilling song only on Beat Indian Lofi Hits playlist!
+            Chill beats to relax and focus </p>
+        <button class="btn"> <a href=""> play</a> </button>
+        <button class="btn"> <a href="">follow</a> </button>
+
+
+
+    </div>
+    <div class=" songItem">
+        <img src="covers/1.jpg" alt="none" width="200" height="200">
+        <p class="songName">sirivennala <br><span class="timestamp"><i id="0" class="fa-solid songItemPlay fa-circle-play"></i></span> </p>
+    </div>
+
+    <div class=" songItem">
+        <img src="covers/2.jpg" alt="none" width="200" height="200">
+        <p class="songName">muvvalanavvakala<br> <span class="timestamp"><i id="1" class="fa-solid songItemPlay fa-circle-play"></i></span></p>
+
+    </div>
+    <div class=" songItem">
+        <img src="covers/3.jpg" alt="none" width="200" height="200">
+        <p class="songName">premaparichayame<br><span class="timestamp"><i id="2" class="fa-solid songItemPlay fa-circle-play"></i></span></p>
+
+    </div>
+    <div class=" songItem">
+        <img src="covers/4.jpg" alt="none" width="200" height="200">
+        <p class="songName">barsore<br><span class="timestamp"><i id="3" class="fa-solid songItemPlay fa-circle-play"></i></span></p>
+
+    </div>
+    <div class="downbox1">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward" id="previous"></i>
+            <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward" id="next"></i>
+
+        </div>
+        <div>
+            <span id="masterSongName">sirivennala</span>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/da93de2386.js" crossorigin="anonymous"></script>">
+    <script src="saaz1.js"></script>
+
+</body>
+
+</html>
